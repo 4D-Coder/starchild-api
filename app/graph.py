@@ -4,6 +4,7 @@ from rdflib.store import Store
 from rdflib_sqlalchemy import registerplugins
 
 registerplugins()
+
 def configure_store():
   id = 'rdf-data-store'
   uri = 'sqlite:///rdf_store.db'
