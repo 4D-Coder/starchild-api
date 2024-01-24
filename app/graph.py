@@ -4,12 +4,13 @@ from rdflib.store import Store
 from rdflib_sqlalchemy import registerplugins
 
 registerplugins()
+def create_user():
 
 def configure_store():
   id = 'rdf-data-store'
   uri = 'sqlite:///rdf_store.db'
   store = plugin.get('SQLAlchemy', Store)(identifier=id)
-  
+
 def create_rdf_graph():
   g = Graph()
 
@@ -22,3 +23,5 @@ def create_rdf_graph():
   g.add((game, DC.genres, Literal("souls-like")))
 
   return g
+
+print(create_rdf_graph())

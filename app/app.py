@@ -5,3 +5,5 @@ from pymantic import sparql
 server = sparql.SPARQLServer('http://127.0.0.1:9999/bigdata/sparql')
 
 app = Flask(__name__)
+
+
