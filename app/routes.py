@@ -7,5 +7,5 @@ def welcome():
 
 @app.route('/api/v1/users')
 def user_create():
-  data = graph.serialize(format='turtle').decode('utf-8')
-  return data
+  # data = graph.serialize(format='turtle').decode('utf-8')
+  # return data

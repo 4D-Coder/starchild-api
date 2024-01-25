@@ -1,4 +1,4 @@
-#!/home/tesseract/Desktop/Projects/python/game_information_api/.starchild-venv/bin/python3.11
+#!/home/tesseract/Desktop/Projects/python/game_information_api/.starchild-venv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys
