@@ -1,4 +1,4 @@
-from rdflib import Graph, plugin, Literal, BNode
+from rdflib import Graph
 from rdflib.namespace import DC, RDF
 from rdflib.store import Store
 from rdflib_sqlalchemy import registerplugins
