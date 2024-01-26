@@ -8,10 +8,10 @@ app = Blueprint("app", __name__)
 def welcome():
   return "StarChild API v1"
 
-@app.route('/api/v1/users', methods=['GET', 'POST'])
+@app.route('/api/v1/register', methods=['GET', 'POST'])
 @flask_rdf
 def user_create():
   build_triple
-  
+
 
 
