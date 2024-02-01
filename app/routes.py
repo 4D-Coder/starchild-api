@@ -14,8 +14,11 @@ def welcome():
 def register():
   match request.method:
     case 'Post':
-      params = get_params(request)
-      user = User()
+      payload = request.get_json()
+      params = dict(payload['data'])
+      import ipdb; ipdb.set_trace()
+      # params = get_params(request)
+      # user = User()
     case 'GET':
       pass
 
