@@ -2,8 +2,10 @@ from rdflib import URIRef, Graph
 from rdflib.namespace import DC, RDF
 from rdflib.store import Store
 
-def build_user_triple(username: str):
-  user = URIRef(f'http://starchild.io/api/v1/register#{username}')
+def build_triple(obj, params):
+  import ipdb; ipdb.set_trace()
+
+  # user = URIRef(f"http://starchild.io/api/v1/register#{request.args.get('username')}")
 
   # g.add((game, DC.title, Literal("Lies of P")))
   # g.add((game, DC.developer, Literal("NEOWIZ")))

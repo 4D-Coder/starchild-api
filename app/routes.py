@@ -1,17 +1,25 @@
+import flask_rdf
 from flask import request, Blueprint
-from flask_rdf import flask_rdf
 from .extensions.graph import build_triple
+from .models.dataclasses import User
 
-app = Blueprint("app", __name__)
+starchild = Blueprint("starchild", __name__)
 
-@app.route('/api/v1/')
+@starchild.route('/api/v1/')
 def welcome():
   return "StarChild API v1"
 
-@app.route('/api/v1/register', methods=['GET', 'POST'])
-@flask_rdf
-def user_create():
-  build_triple
+# @flask_rdf
+@starchild.route('/api/v1/register', methods=['GET', 'POST'])
+def register():
+  match request.method:
+    case 'Post':
+      params = get_params(request)
+      user = User()
+    case 'GET':
+      pass
 
 
 
+def get_params(request):
+  return request.get_json()
