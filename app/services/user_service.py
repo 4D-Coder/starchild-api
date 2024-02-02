@@ -1,4 +1,4 @@
-from app.models.dataclasses import User
+from app.popos.dataclasses import User
 
 def build_user(s, p, o):
   user = User(s=s, o=o, p=p )

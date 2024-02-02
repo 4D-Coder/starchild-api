@@ -1,7 +1,7 @@
 import flask_rdf
 from flask import request, Blueprint
 from .extensions.graph import build_triple
-from .models.dataclasses import User
+from .popos.dataclasses import User
 
 starchild = Blueprint("starchild", __name__)
 
